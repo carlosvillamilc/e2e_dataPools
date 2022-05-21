@@ -25,6 +25,10 @@ const availablefixtures = [
     {
       "name": "datosApriori7",
       "context": "Usuario correcto y Contraseña vacia"
+    },
+    {
+      "name": "datosApriori8",
+      "context": "Usuario sin arroba y Contraseña valida"
     }
   ]
   
@@ -44,7 +48,7 @@ const availablefixtures = [
     it('Cypress Test Case - Understanding Fixtures', function () {
   
       //Provide the data read from the fixture
-      cy.visit('http://localhost:3001/ghost/')
+      cy.visit('http://localhost:2369/ghost/')
       cy.wait(2000)
       cy.get('#ember8').type(this.data.user)
       cy.get('#ember10').type(this.data.password)
