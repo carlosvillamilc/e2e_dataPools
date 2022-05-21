@@ -4,7 +4,27 @@
 const availablefixtures = [
     {
         "name": "datosApriori2",
-        "context": "1"
+        "context": "Usuario y password invalidos"
+    },
+    {
+      "name": "datosApriori3",
+      "context": "Usuario valido y Contraseña invalida"
+    },
+    {
+      "name": "datosApriori4",
+      "context": "Usuario invalido y Contraseña valida"
+    },
+    {
+      "name": "datosApriori5",
+      "context": "Usuario vacio y Contraseña vacia"
+    },
+    {
+      "name": "datosApriori6",
+      "context": "Usuario vacio y Contraseña correcta"
+    },
+    {
+      "name": "datosApriori7",
+      "context": "Usuario correcto y Contraseña vacia"
     }
   ]
   
@@ -26,13 +46,12 @@ const availablefixtures = [
       //Provide the data read from the fixture
       cy.visit('http://localhost:3001/ghost/')
       cy.wait(2000)
-      var usuario = this.data.user;
-      var password = this.data.password;
-      cy.get('#ember8').type(usuario)
-      cy.get('#ember10').type(password)
-      cy.get('#ember12').click()   
+      cy.get('#ember8').type(this.data.user)
+      cy.get('#ember10').type(this.data.password)
+      cy.get('#ember12').click() 
+      cy.wait(2000)  
       cy.get('.main-error').should(($p)=>{
-        expect($p).to.contain('Please fill out the form to sign in.')
+        expect($p).to.contain(this.data.mensaje)
       })
       
             })
