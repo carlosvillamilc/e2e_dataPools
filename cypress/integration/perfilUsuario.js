@@ -2,7 +2,7 @@
 // <reference types="cypress" />
 let port = '2369';
 const availablefixtures = [
-    {
+   /* {
         "name": "datosApriori",
         "context": "Perfil de usuario - Name vacio, correo correcto"
     },
@@ -25,11 +25,15 @@ const availablefixtures = [
     {
         "name": "datosApriori16",
         "context": "Perfil de usuario - Name diligenciado, correo con @ y dominio sin texto"
-    },
+    },*/
     /*{
         "name": "datosApriori17",
         "context": "Perfil de usuario - Name diligenciado, correo con @ y más de 3 dominios"
     }*/,
+    {
+      "name": "datosApriori28",
+      "context": "Perfil de usuario - Name diligenciado, correo con 3 dominios iguales"
+    }/*,
     {
         "name": "datosApriori18",
         "context": "Perfil de usuario - Name diligenciado, correo con caracteres > 190"
@@ -41,7 +45,7 @@ const availablefixtures = [
     {
         "name": "datosApriori20",
         "context": "Perfil de usuario - Name vacio, correo vacio"
-    }
+    }*/
   ]
   
   describe('Automation Test Suite - Fixtures', function () {
