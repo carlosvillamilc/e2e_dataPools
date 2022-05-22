@@ -2,7 +2,7 @@ import {faker} from '@faker-js/faker'
 
 let user = '';
 let password = '';
-let port = '2368';
+let port = '3001';
 describe('new tags', () => {
     beforeEach(() => {
       
