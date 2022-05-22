@@ -1,5 +1,6 @@
 import {faker} from '@faker-js/faker'
 
+let port = '3001';
 let user = '';
 let password = '';
 let emailDomains = faker.internet.email() +'.co.AE';
@@ -17,7 +18,7 @@ describe('Permite crear un member con mas de dos dominios', () => {
             user = data.user
             password = data.password
         })
-        cy.visit('http://localhost:3001/ghost/')
+        cy.visit(`http://localhost:${port}/ghost/`)
         cy.wait(2000)        
         
     })

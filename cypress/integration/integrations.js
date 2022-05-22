@@ -1,5 +1,6 @@
 import {faker} from '@faker-js/faker'
 
+let port = '3001';
 let user = '';
 let password = '';
 let website = faker.internet.domainWord();
@@ -21,7 +22,7 @@ describe('Permite crear integraciones', () => {
             user = data.user
             password = data.password
         })
-        cy.visit('http://localhost:3001/ghost/')
+        cy.visit(`http://localhost:${port}/ghost/`)
         cy.wait(2000)        
         
     })

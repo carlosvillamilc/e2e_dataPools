@@ -1,5 +1,6 @@
 import {faker} from '@faker-js/faker'
 
+let port = '3001';
 let user = '';
 let password = '';
 let SubscribeEmail = "";
@@ -16,7 +17,7 @@ describe('Suscribirse como Ingeneiro en viewSite', () => {
             user = data.user
             password = data.password
         })
-        cy.visit('http://localhost:3001/ghost/')
+        cy.visit(`http://localhost:${port}/ghost/`)
         cy.wait(2000)        
         
     })
@@ -27,7 +28,7 @@ describe('Suscribirse como Ingeneiro en viewSite', () => {
         cy.get('#ember12').click()        
         cy.get('a[href="#/site/"]').click()
         cy.wait(2000) 
-        cy.get('svg[xmlns="http://www.w3.org/2000/svg"]').click()
+       // cy.get('svg[xmlns="http://www.w3.org/2000/svg"]').click()
         //cy.get('input[placeholder="youremail@example.com"]').type(SubscribeEmail).type('{enter}') 
         //cy.get('button[class="button primary"]').click()
         
