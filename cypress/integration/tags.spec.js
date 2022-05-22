@@ -15,8 +15,7 @@ describe('new tags', () => {
       cy.visit(`http://localhost:${port}/ghost/`)
       cy.wait(2000)
       tagName = faker.lorem.sentence(100)
-          
-
+      
     })
     it('Create a new tag with tag color 2 character', () => {       
             cy.get('#ember8').type(user)
@@ -64,6 +63,7 @@ describe('new tags', () => {
             cy.get('#ember8').type(user)
             cy.get('#ember10').type(password)
             cy.get('#ember12').click()        
+
             cy.url().should('eq', `http://localhost:${port}/ghost/#/site`)
             cy.get('a[href="#/tags/"]').eq(0).click()
             cy.wait(100)
