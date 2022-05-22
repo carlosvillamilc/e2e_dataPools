@@ -14,10 +14,6 @@ const availablefixtures = [
         "context": "Tags sin colocar Name y con descripción > 500 caracteres"
     },
     {
-        "name": "datosApriori24",
-        "context": "Tag con Name y con descripción = 500 caracteres"
-    },
-    {
         "name": "datosApriori25",
         "context": "Tag con Name y con descripción > 500 caracteres"
     }

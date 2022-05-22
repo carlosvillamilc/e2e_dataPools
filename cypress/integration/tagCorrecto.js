@@ -2,9 +2,13 @@ let port = '2369';
 
 const availablefixtures = [
     {
-        "name": "datosApriori21",
+        "name": "datosApriori26",
         "context": "Tags sin colocar Name y con descripción"
-    }
+    },
+    {
+      "name": "datosApriori24",
+      "context": "Tag con Name y con descripción = 500 caracteres"
+  },
 ]
 
 describe('Automation Test Suite - Fixtures', function () {
