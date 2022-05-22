@@ -30,6 +30,18 @@ const availablefixtures = [
     {
       "name": "datosApriori8",
       "context": "Usuario sin arroba y Contraseña valida"
+    },
+    {
+      "name": "datosApriori9",
+      "context": "Usuario sin dominio y Contraseña valida"
+    },
+    {
+      "name": "datosApriori10",
+      "context": "Usuario > 191 caracteres y Contraseña valida"
+    },
+    {
+      "name": "datosApriori11",
+      "context": "Usuario = 191 caracteres y Contraseña valida"
     }
   ]
   
