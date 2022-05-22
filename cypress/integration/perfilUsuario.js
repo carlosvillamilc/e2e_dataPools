@@ -25,6 +25,22 @@ const availablefixtures = [
     {
         "name": "datosApriori16",
         "context": "Perfil de usuario - Name diligenciado, correo con @ y dominio sin texto"
+    },
+    /*{
+        "name": "datosApriori17",
+        "context": "Perfil de usuario - Name diligenciado, correo con @ y más de 3 dominios"
+    }*/,
+    {
+        "name": "datosApriori18",
+        "context": "Perfil de usuario - Name diligenciado, correo con caracteres > 190"
+    },
+    {
+        "name": "datosApriori19",
+        "context": "Perfil de usuario - Name diligenciado, correo con caracteres > 190"
+    },
+    {
+        "name": "datosApriori20",
+        "context": "Perfil de usuario - Name vacio, correo vacio"
     }
   ]
   
