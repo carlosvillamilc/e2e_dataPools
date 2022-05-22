@@ -2,7 +2,7 @@
 // <reference types="cypress" />
 let port = '2369';
 const availablefixtures = [
-   /* {
+    {
         "name": "datosApriori",
         "context": "Perfil de usuario - Name vacio, correo correcto"
     },
@@ -25,27 +25,27 @@ const availablefixtures = [
     {
         "name": "datosApriori16",
         "context": "Perfil de usuario - Name diligenciado, correo con @ y dominio sin texto"
-    },*/
+    },
     /*{
         "name": "datosApriori17",
         "context": "Perfil de usuario - Name diligenciado, correo con @ y más de 3 dominios"
-    }*/,
+    },
     {
       "name": "datosApriori28",
       "context": "Perfil de usuario - Name diligenciado, correo con 3 dominios iguales"
-    }/*,
+    },*/
     {
         "name": "datosApriori18",
         "context": "Perfil de usuario - Name diligenciado, correo con caracteres > 190"
     },
     {
         "name": "datosApriori19",
-        "context": "Perfil de usuario - Name diligenciado, correo con caracteres > 190"
+        "context": "Perfil de usuario - Name diligenciado, correo con caracteres = 190"
     },
     {
         "name": "datosApriori20",
         "context": "Perfil de usuario - Name vacio, correo vacio"
-    }*/
+    }
   ]
   
   describe('Automation Test Suite - Fixtures', function () {
@@ -59,6 +59,9 @@ const availablefixtures = [
       cy.fixture(afixture.name).then(function (data) {
         this.data = data;
       })
+      cy.fixture('ghost.json').then((data2)  => {
+        this.data2 = data2;
+    })
     })
   
     it('Cypress Test Case - Understanding Fixtures', function () {
@@ -66,8 +69,8 @@ const availablefixtures = [
       //Provide the data read from the fixture
       cy.visit(`http://localhost:${port}/ghost/`)
       cy.wait(2000)
-      var usuario = this.data.user;
-      var password = this.data.password;
+      var usuario = this.data2.user;
+      var password = this.data2.password;
       cy.get('#ember8').type(usuario)
       cy.get('#ember10').type(password)
       cy.get('#ember12').click()  

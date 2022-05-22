@@ -30,6 +30,9 @@ describe('Automation Test Suite - Fixtures', function () {
       cy.fixture(afixture.name).then(function (data) {
         this.data = data;
       })
+      cy.fixture('ghost.json').then((data2)  => {
+        this.data2 = data2;
+    })
     })
   
     it('Cypress Test Case - Understanding Fixtures', function () {
@@ -37,8 +40,8 @@ describe('Automation Test Suite - Fixtures', function () {
       //Provide the data read from the fixture
       cy.visit(`http://localhost:${port}/ghost/`)
       cy.wait(2000)
-      var usuario = this.data.user;
-      var password = this.data.password;
+      var usuario = this.data2.user;
+      var password = this.data2.password;
       cy.get('#ember8').type(usuario)
       cy.get('#ember10').type(password)
       cy.get('#ember12').click()  
