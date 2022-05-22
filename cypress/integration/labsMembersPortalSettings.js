@@ -20,7 +20,7 @@ describe('Permite SetUp el portal de members', () => {
             user = data.user
             password = data.password
         })
-        cy.visit('http://localhost:2368/ghost/')
+        cy.visit('http://localhost:3001/ghost/')
         cy.wait(2000)        
         
     })
@@ -32,10 +32,11 @@ describe('Permite SetUp el portal de members', () => {
         cy.get('a[href="#/settings/labs/"]').eq(0).click()
         cy.get('a[href="#/settings/labs/members/"]').eq(0).click()
         cy.get('button[class="gh-btn gh-btn-outline blue"]').eq(0).click()
-        cy.get('input[class="ember-text-field gh-input ember-view"]').eq(1).type(numberColor1)
+        cy.get('input[id="ember113"').eq(1).type(numberColor1)
         cy.get('button[class="gh-btn gh-btn-icon gh-btn-blue ember-view"]').click()  
     })
 /*
+cy.get('[data-test-id="test-example"]').should('have.length', 5)
     it('Accent color 2 numbers', () => {       
         cy.get('#ember8').type(user)
         cy.get('#ember10').type(password)
