@@ -119,9 +119,6 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 |Site Description = 200 caracteres|Faker|
 |Site Description > 200 caracteres|Faker|
 |Site Description < 200 caracteres|Faker|
-|Canonical URL = 2000|
-|Canonical URL < 2000|
-|Canonical URL >2000|
 |Twitter title < 300|
 |Twitter title = 300|
 |Twitter title > 300|
