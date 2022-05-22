@@ -86,16 +86,16 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 |Tag diligenciado con descripción > a 500| Datos Apriori |
 |Tag diligenciado con descripción = a 500| Datos Apriori |
 |Tags Color un numero| Datos Apriori |
-|Tags Color dos numeros|Faker|
-|Tags Color tres numeros|Faker|
-|Tags Color cuatro numeros|Faker|
-|Tags Color cinco numeros|Faker|
-|Tags Color seis numeros|Faker|
-|Tags Color caracteres especiales|Faker|
-|Name mayor a 191|Faker|
-|Name = a 191|Faker|
-|Slug = 191|Faker|
-|Slug > 191|Faker|
+|Creacion de tags con el campo Color dos numeros|Faker|
+|Creacion de tags con el campo Color tres numeros|Faker|
+|Creacion de Tags con el campo Color cuatro numeros|Faker|
+|Creacion de tags con el campo Color cinco numeros|Faker|
+|Creacion de tags con el campo color seis numeros|Faker|
+|Creacion de tags con el campo color caracteres especiales|Faker|
+|Creacion de tags con el campo Name mayor a 191 caracteres|Faker|
+|Creacion de tags con el campo Name = a 191 caracteres|Faker|
+|Creacion de tags con el campo Slug = 191 caracteres|Faker|
+|Creacion de tags con el campo Slug > 191 caracteres|Faker|
 |Staff invitar nuevo usuario correo correcto- author|Faker|
 |Staff invitar nuevo usuario correo correcto- admin|Faker|
 |Staff invitar nuevo usuario correo correcto- contibutor|Faker|
@@ -109,16 +109,16 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 |Staff invitar nuevo usuario con doble arroba|Faker|
 |Staff invitar nuevo usuario correo mayor a 74 caracteres|Faker|
 |Staff invitar nuevo usuario correo = a 74 caracteres|Faker|
-|General Settings Metatitle = 300|Faker|
-|Metatitle > 300|Faker|
-|Meta Description = 300|Faker|
-|Meta Description > 300|Faker|
-|Site Title = 150 caracteres|Faker|
-|Site Title > 150 caracteres|Faker|
-|Site Title < 150 caracteres|Faker|
-|Site Description = 200 caracteres|Faker|
-|Site Description > 200 caracteres|Faker|
-|Site Description < 200 caracteres|Faker|
+|Vista General Settings campo Metatitle con 300 caracteres|Faker|
+|Vista General Settings campo Metatitle > 300 caracteres|Faker|
+|Vista General Settings campo Meta Description = 300 caracteres|Faker|
+|Vista General Settings campo Meta Description > 300 caracteres |Faker|
+|Vista General Settings campo Site Title = 150 caracteres|Faker|
+|Vista General Settings campo Site Title > 150 caracteres|Faker|
+|Vista General Settings campo Site Title < 150 caracteres|Faker|
+|Vista General Settings campo Site Description = 200 caracteres|Faker|
+|Vista General Settings campo Site Description > 200 caracteres|Faker|
+|Vista General Settings campo Site Description < 200 caracteres|Faker|
 |Twitter title < 300|
 |Twitter title = 300|
 |Twitter title > 300|
