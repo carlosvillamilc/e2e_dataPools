@@ -80,7 +80,7 @@ describe('Permite crear integraciones', () => {
         cy.get('input[id="new-integration-name"').eq(0).type(newIntegrationLess191).type('{enter}') 
     })
 
-    it('Modificar Integracion webHook ', () => {       
+    it('Integracion New  webHook ', () => {       
         cy.get('#ember8').type(user)
         cy.get('#ember10').type(password)
         cy.get('#ember12').click()        
@@ -89,6 +89,43 @@ describe('Permite crear integraciones', () => {
         cy.get('div[class="flex items-center pa2 pt1"]').eq(0).click() 
         cy.get('input[placeholder="Webhook name..."').eq(0).type(webHoockName).type('{enter}') 
         cy.get('input[placeholder="Webhook target URL..."').eq(0).type(webHoockTargetUrl).type('{enter}') 
+        //cy.get('span[Create]').click() 
+    })
+
+    it('Integracion New webHook Complete', () => {       
+        cy.get('#ember8').type(user)
+        cy.get('#ember10').type(password)
+        cy.get('#ember12').click()        
+        cy.get('a[href="#/settings/integrations/"]').eq(0).click()
+        cy.get('a[href="#/settings/integrations/6289dab1ac4eb60001780d4a/"]').eq(0).click()
+        cy.get('div[class="flex items-center pa2 pt1"]').eq(0).click() 
+        cy.get('input[placeholder="Webhook name..."').eq(0).type(webHoockName).type('{enter}') 
+        cy.get('select[id="webhook-event"]').eq(0).select("Published page updated")
+        cy.get('input[placeholder="Webhook target URL..."').eq(0).type(webHoockTargetUrl).type('{enter}') 
+        
+    })
+
+    it('Integracion New webHook sin target', () => {       
+        cy.get('#ember8').type(user)
+        cy.get('#ember10').type(password)
+        cy.get('#ember12').click()        
+        cy.get('a[href="#/settings/integrations/"]').eq(0).click()
+        cy.get('a[href="#/settings/integrations/6289dab1ac4eb60001780d4a/"]').eq(0).click()
+        cy.get('div[class="flex items-center pa2 pt1"]').eq(0).click() 
+        cy.get('input[placeholder="Webhook name..."').eq(0).type(webHoockName).type('{enter}') 
+        cy.get('select[id="webhook-event"]').eq(0).select("Published page updated").type('{enter}')
+        
+    })
+
+    it('Integracion New webHook sin nombre', () => {       
+        cy.get('#ember8').type(user)
+        cy.get('#ember10').type(password)
+        cy.get('#ember12').click()        
+        cy.get('a[href="#/settings/integrations/"]').eq(0).click()
+        cy.get('a[href="#/settings/integrations/6289dab1ac4eb60001780d4a/"]').eq(0).click()
+        cy.get('div[class="flex items-center pa2 pt1"]').eq(0).click() 
+        cy.get('select[id="webhook-event"]').eq(0).select("Published page updated").type('{enter}')
+        
     })
 
 
