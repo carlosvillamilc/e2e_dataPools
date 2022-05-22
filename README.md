@@ -23,7 +23,7 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 
 4. Cree un directorio vacio en su máquina.
 
-5. Dirijase a ste direcctorio por medio de la terminal o CMD
+5. Dirijase a este direcctorio por medio de la terminal o CMD
 
 6. Ejecute el siguiente comando: git init.
 
@@ -40,10 +40,12 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 10. La herramienta usada para la ejecución de las pruebas es Cypress, por lo tanto debe tenerla instalada en el computador.
 
 11. Abra una nueva terminal desde Visual
-  
-12. En la consola digite el comando `cypress open`, el cual abrira la interfaz grafica de cypress y desde allí debe abrir la carpeta donde alojo su proyecto.
 
-13. Desde allí podrá ejecutar los casos uno a uno dando click en el nombre de cada uno de ellos o podra seleccionar la opción que dice "Run 120 integration specs.
+12. Ejecute el comando: npm install
+  
+13. En la consola digite el comando `cypress open`, el cual abrira la interfaz grafica de cypress y desde allí debe abrir la carpeta donde alojo su proyecto.
+
+14. Desde allí podrá ejecutar los casos uno a uno dando click en el nombre de cada uno de ellos o podra seleccionar la opción que dice "Run 120 integration specs.
 
     * Nota: Dos casos se encuentran comentados dado que se encontraron dos bugs que afectan considerablemente el comportamiento de la aplicación, ya que se cambia el usuario para ingresar desde la aplicación y esto se haría en tiempo de ejecución de la automatización y generaria que los demás casos empiecen a fallar. Estos casos se encuentran en el archivo perfilUsuario.js y estan entre la lineas 29 a 36. Así que si desea ejecutarlos es necesario descomentar dichas lineas.
 
