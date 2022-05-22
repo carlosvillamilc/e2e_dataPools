@@ -1,6 +1,7 @@
 import {faker} from '@faker-js/faker'
 
 let port = '3001';
+let usernameSlug ="andres";
 let user = '';
 let password = '';
 let website = faker.internet.domainWord();
@@ -28,12 +29,12 @@ describe('Permite configurar la pagina en el perfil personal', () => {
         cy.get('#ember12').click()        
         cy.get('span[class="gh-user-email"]').eq(0).click()
        //duda
-        cy.get('a[href="#/staff/andres/"]').click()
+       cy.get(`a[href="#/staff/${usernameSlug}/"]`).click()
         cy.get('#user-website').type(website)
         cy.get('#user-facebook').click()
         cy.get('p[class="response"]').should(($p)=>{
             expect($p).to.contain("Website is not a valid url")
-          })
+        })
     
     })
 
@@ -43,12 +44,12 @@ describe('Permite configurar la pagina en el perfil personal', () => {
         cy.get('#ember12').click()        
         cy.get('span[class="gh-user-email"]').eq(0).click()
        //duda
-        cy.get('a[href="#/staff/andres/"]').click()
+        cy.get(`a[href="#/staff/${usernameSlug}/"]`).click()
         cy.get('#user-website').type(websiteSpecialCharacter)
         cy.get('#user-facebook').click()
         cy.get('p[class="response"]').should(($p)=>{
             expect($p).to.contain("Website is not a valid url")
-          })
+        })
     
     })
 
@@ -58,12 +59,12 @@ describe('Permite configurar la pagina en el perfil personal', () => {
         cy.get('#ember12').click()        
         cy.get('span[class="gh-user-email"]').eq(0).click()
        //duda
-        cy.get('a[href="#/staff/andres/"]').click()
+        cy.get(`a[href="#/staff/${usernameSlug}/"]`).click()
         cy.get('#user-website').type(websiteWithoutDomain)
         cy.get('#user-facebook').click()
         cy.get('p[class="response"]').should(($p)=>{
             expect($p).to.contain("Website is not a valid url")
-          })
+        })
     
     })
 
