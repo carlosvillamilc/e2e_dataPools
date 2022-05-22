@@ -20,7 +20,7 @@ describe('Permite SetUp el portal de members', () => {
             user = data.user
             password = data.password
         })
-        cy.visit('http://localhost:2368/ghost/')
+        cy.visit('http://localhost:3001/ghost/')
         cy.wait(2000)        
         
     })
