@@ -44,5 +44,6 @@ Thumbs.db
 package-lock.json
 /package-lock.json
 
-/cypress/fixtures/ghost.json
+
+cypress/fixtures/ghost.json
 ghost.json
