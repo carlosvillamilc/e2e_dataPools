@@ -1,5 +1,6 @@
 // type definitions for Cypress object "cy"
 // <reference types="cypress" />
+let port = '2369';
 
 const availablefixtures = [
     {
@@ -32,8 +33,9 @@ const availablefixtures = [
     }
   ]
   
+
   describe('Automation Test Suite - Fixtures', function () {
-  
+    
     //loop through both the fixtues 
     availablefixtures.forEach((afixture) => {
     describe(afixture.context, () => {
@@ -48,7 +50,7 @@ const availablefixtures = [
     it('Cypress Test Case - Understanding Fixtures', function () {
   
       //Provide the data read from the fixture
-      cy.visit('http://localhost:2369/ghost/')
+      cy.visit(`http://localhost:${port}/ghost/`)
       cy.wait(2000)
       cy.get('#ember8').type(this.data.user)
       cy.get('#ember10').type(this.data.password)
