@@ -17,26 +17,54 @@ describe('Suscribirse como Ingeneiro en viewSite', () => {
             user = data.user
             password = data.password
         })
-        cy.visit(`http://localhost:${port}/ghost/`)
+        cy.visit(`http://localhost:${port}/`)
         cy.wait(2000)        
         
     })
 
-    it('Subscribe sin correo', () => {       
-        cy.get('#ember8').type(user)
-        cy.get('#ember10').type(password)
-        cy.get('#ember12').click()        
-        cy.get('a[href="#/site/"]').click()
-        cy.wait(500) 
-        cy.contains('#subscribe').click()
-       // cy.get(`a[href="#subscribe"]`).eq(0).click();
-       cy.contains('subscribe-button')
+    it('Subscribe sin correo', () => {
+        cy.url().should('eq', `http://localhost:${port}/`)
+        cy.get(`a[href="#subscribe"]`).eq(0).click();
         cy.wait(500);
-        //cy.get('input[placeholder="youremail@example.com"]').type(SubscribeEmail).type('{enter}') 
-        //cy.get('button[class="button primary"]').click()
+        cy.get('.subscribe-email').type(" ");
+        cy.wait(500);
+        cy.get('#subscribe > div > div > form > div.form-group > button').click();
+        cy.get('div.message-error').should('contain', 'Please enter a valid email address!')
         
     })
 
- 
+    it('Subscribe correo sin arroba', () => {
+        cy.url().should('eq', `http://localhost:${port}/`)
+        cy.get(`a[href="#subscribe"]`).eq(0).click();
+        cy.wait(500);        
+        cy.get('.subscribe-email').type(faker.random.word());
+        //cy.get('.subscribe-email').type(faker.internet.email('Jeanne', 'Doe', 'example.fakerjs.dev', { allowSpecialCharacters: true }));
+        cy.wait(500);
+        cy.get('#subscribe > div > div > form > div.form-group > button').click();
+        cy.get('div.message-error').should('contain', 'Please enter a valid email address!')
+        
+    })
 
+    it('Subscribe correo sin dominio', () => {
+        cy.url().should('eq', `http://localhost:${port}/`)
+        cy.get(`a[href="#subscribe"]`).eq(0).click();
+        cy.wait(500);        
+        cy.get('.subscribe-email').type(faker.random.word()+'@');
+        //cy.get('.subscribe-email').type(faker.internet.email('Jeanne', 'Doe', 'example.fakerjs.dev', { allowSpecialCharacters: true }));
+        cy.wait(500);
+        cy.get('#subscribe > div > div > form > div.form-group > button').click();
+        cy.get('div.message-error').should('contain', 'Please enter a valid email address!')
+        
+    })
+
+    it('Subscribe correo con 3 dominios', () => {
+        cy.url().should('eq', `http://localhost:${port}/`)
+        cy.get(`a[href="#subscribe"]`).eq(0).click();
+        cy.wait(500);        
+        cy.get('.subscribe-email').type(faker.random.word()+'@gmail.co.co.co');        
+        cy.wait(500);
+        cy.get('#subscribe > div > div > form > div.form-group > button').click();
+        cy.get('div.message-error').should('contain', 'Please enter a valid email address!')
+        
+    })
 })
