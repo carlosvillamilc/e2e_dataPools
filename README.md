@@ -119,36 +119,36 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 |Site Description = 200 caracteres|Faker|
 |Site Description > 200 caracteres|Faker|
 |Site Description < 200 caracteres|Faker|
-|Twitter title < 300|
-|Twitter title = 300|
-|Twitter title > 300|
-|Twitter Description < 500|
-|Twitter Description = 500|
-|Twitter Description > 500|
-|Design sin protocolo en campo |
-|Design con protocolo en números |
-|Design sin url|
-|Olvido de password con vieja incorrecta - nuevo y confirmación iguales|
-|Olvido de password con vieja correcta - nuevo  vacio y confirmación lleno|
-|Olvido de password con vieja correcta - nuevo  lleno y confirmación vacio|
-|Olvido de password con vieja correcta - nuevo  vacio y confirmación vacio|
-|Olvido de password con vieja correcta - nuevo  lleno < 10 y confirmación lleno|
-|Olvido de password con vieja correcta - nuevo  lleno = 10 y confirmación lleno|
-|Olvido de password con vieja correcta - nuevo  lleno > 10 y confirmación lleno|
-|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno <10|
-|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno = 10|
-|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno > 10|
-|Perfil Bio < 200|
-|Perfil Bio = 200|
-|Perfil Bio > 200|
-|Post title < 2000|
-|Post title = 2000|
-|Post title > 2000|
-|Post title caracteres especiales|
-|Members email correcto|
-|Members solo arroba pegado del dominio|
-|Members email doble arroba|
-|Members email sin domino|
+|Twitter title < 300|Datos Apriori |
+|Twitter title = 300|Datos Apriori |
+|Twitter title > 300|Datos Apriori |
+|Twitter Description < 500|Datos Apriori |
+|Twitter Description = 500|Datos Apriori |
+|Twitter Description > 500|Datos Apriori |
+|Design sin protocolo en campo |Faker |
+|Design con protocolo en números |Faker |
+|Design sin url|Faker |
+|Olvido de password con vieja incorrecta - nuevo y confirmación iguales|Faker |
+|Olvido de password con vieja correcta - nuevo  vacio y confirmación lleno|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno y confirmación vacio|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  vacio y confirmación vacio|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno < 10 y confirmación lleno|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno = 10 y confirmación lleno|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno > 10 y confirmación lleno|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno <10|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno = 10|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno > 10|Datos Apriori |
+|Perfil Bio < 200|Faker |
+|Perfil Bio = 200|Faker |
+|Perfil Bio > 200|Faker |
+|Post title < 2000|Faker |
+|Post title = 2000|Faker |
+|Post title > 2000|Faker |
+|Post title caracteres especiales|Datos Apriori |
+|Members email correcto|Faker |
+|Members solo arroba pegado del dominio|Faker |
+|Members email doble arroba|Faker |
+|Members email sin domino|Faker |
 |Members email con triple domino|
 |Members caracteres especiales y @ + dominio correctos|
 |Members nota < 500|
