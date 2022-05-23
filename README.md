@@ -49,6 +49,7 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 
     * Nota: Dos casos se encuentran comentados dado que se encontraron dos bugs que afectan considerablemente el comportamiento de la aplicación, ya que se cambia el usuario para ingresar desde la aplicación y esto se haría en tiempo de ejecución de la automatización y generaria que los demás casos empiecen a fallar. Estos casos se encuentran en el archivo perfilUsuario.js y estan entre la lineas 29 a 36. Así que si desea ejecutarlos es necesario descomentar dichas lineas.
 
+## IMPORTANTE: LOS CASOS DE CAMBIAR CONTRASEÑA, EJECUTARLOS AL FINAL, DEBIDO A QUE SE PUEDE CAMBIAR LA CONTRASEÑA ACCIDENTALMENTE Y LUEGO SERA DIFICIL LOGEARSE. 
 
 ## Bugs reportados
     * Se encuentran enla sección de Issues del proyecto en Github
