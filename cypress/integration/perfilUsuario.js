@@ -1,7 +1,6 @@
 // type definitions for Cypress object "cy"
 // <reference types="cypress" />
 let port = '3001';
-let usernameSlug ="andres";
 const availablefixtures = [
     {
         "name": "datosApriori",
@@ -78,7 +77,7 @@ const availablefixtures = [
       cy.wait(2000)
       cy.get('.gh-user-email').click()
       cy.wait(2000)
-      cy.get(`a[href="#/staff/${usernameSlug}/"]`).click()
+      cy.contains(' Your Profile ').click()
       cy.wait(2000)
       cy.get('#user-name').clear()
       cy.get('#user-name').type(this.data.name,{force: true})

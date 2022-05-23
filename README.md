@@ -49,8 +49,6 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 
     * Nota: Dos casos se encuentran comentados dado que se encontraron dos bugs que afectan considerablemente el comportamiento de la aplicación, ya que se cambia el usuario para ingresar desde la aplicación y esto se haría en tiempo de ejecución de la automatización y generaria que los demás casos empiecen a fallar. Estos casos se encuentran en el archivo perfilUsuario.js y estan entre la lineas 29 a 36. Así que si desea ejecutarlos es necesario descomentar dichas lineas.
 
-    *Nota2": Para ciertos casos hay que colocar el Slug de su usuario, es decir el nombre de pila que ingreso en su registro, solo es ir a los casos PerfilUsuario Y ProfileWebSite, en cada uno de ellos encontrara una varible llamada usernameSlug, cambiale por el nombre mencionado.
-
 ## Bugs reportados
     * Se encuentran enla sección de Issues del proyecto en Github
 
