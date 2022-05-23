@@ -90,7 +90,6 @@ describe('Permite crear integraciones', () => {
         cy.get('div[class="flex items-center pa2 pt1"]').eq(0).click() 
         cy.get('input[placeholder="Webhook name..."').eq(0).type(webHoockName).type('{enter}') 
         cy.get('input[placeholder="Webhook target URL..."').eq(0).type(webHoockTargetUrl).type('{enter}') 
-        //cy.get('span[Create]').click() 
     })
 
     it('Integracion New webHook Complete', () => {       
