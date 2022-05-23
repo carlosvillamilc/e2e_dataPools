@@ -54,129 +54,129 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 
 ## Detalle de casos y estrategia utilizada
 
-|Caso|DataPool|Estado|
+|Caso|DataPool|
 |-|-|
-|Password ambos campos correctos| Datos Apriori | |
-|Password vacios los dos| Datos Apriori | |
-|Password vacio y lleno| Datos Apriori | |
-|Password lleno y vacio| Datos Apriori | |
-|Password correcto e incorrecto| Datos Apriori | |
-|Password incorrecto e correcto| Datos Apriori | |
-|Password ambos incorrectos| Datos Apriori | |
-|Usuario sin arroba| Datos Apriori | |
-|Usuario sin domino| Datos Apriori | |
-|Correo con mas de 191 caracteres| Datos Apriori | |
-|Correo con 191 caracteres| Datos Apriori | |
-|Full name - vacio, Email con datos| Datos Apriori | |
-|Full name con datos - Email vacio| Datos Apriori | |
-|Email con arroba y dominio sin más texto| Datos Apriori | |
-|Email sin arroba| Datos Apriori | |
-|Email con arroba sin dominio| Datos Apriori | |
-|Email con más de una arroba y un dominio| Datos Apriori | |
-|Email con un arroba y 3 dominios| Datos Apriori | |
-|Email con longitud mayor a 190| Datos Apriori | |
-|Email con longitud igual a 190| Datos Apriori | |
-|Full name vacio y email lleno correcto| Datos Apriori | |
-|Full name correcto y email vacio| Datos Apriori | |
-|Los dos campos vacios| Datos Apriori | |
-|Tag vacio con descripción menor a 500| Datos Apriori | |
-|Tag vacio con descripción = a 500| Datos Apriori | |
-|Tag vacio con descripción > a 500| Datos Apriori | |
-|Tag diligenciado con descripción < a 500| Datos Apriori | |
-|Tag diligenciado con descripción > a 500| Datos Apriori | |
-|Tag diligenciado con descripción = a 500| Datos Apriori | |
-|Tags Color un numero| Datos Apriori | |
-|Creacion de tags con el campo Color dos numeros|Faker| |
-|Creacion de tags con el campo Color tres numeros|Faker| |
-|Creacion de Tags con el campo Color cuatro numeros|Faker| |
-|Creacion de tags con el campo Color cinco numeros|Faker| |
-|Creacion de tags con el campo color seis numeros|Faker| |
-|Creacion de tags con el campo color caracteres especiales|Faker| |
-|Creacion de tags con el campo Name mayor a 191 caracteres|Faker| |
-|Creacion de tags con el campo Name = a 191 caracteres|Faker| |
-|Creacion de tags con el campo Slug = 191 caracteres|Faker| |
-|Creacion de tags con el campo Slug > 191 caracteres|Faker| |
-|Staff invitar nuevo usuario correo correcto- author|Faker| |
-|Staff invitar nuevo usuario correo correcto- admin|Faker| |
-|Staff invitar nuevo usuario correo correcto- contibutor|Faker| |
-|Staff invitar nuevo usuario correo correcto- editor|Faker| |
-|Staff invitar nuevo usuario correo incorrecto- author|Faker| |
-|Staff invitar nuevo usuario correo incorrecto- admin|Faker| |
-|Staff invitar nuevo usuario correo incorrecto- contibutor|Faker| |
-|Staff invitar nuevo usuario correo incorrecto- editor|Faker| |
-|Staff invitar nuevo usuario sin arroba|Faker| |
-|Staff invitar nuevo usuario sin dominio|Faker| |
-|Staff invitar nuevo usuario con doble arroba|Faker| |
-|Staff invitar nuevo usuario correo mayor a 74 caracteres|Faker| |
-|Staff invitar nuevo usuario correo = a 74 caracteres|Faker| |
-|Vista General Settings campo Metatitle con 300 caracteres|Faker| |
-|Vista General Settings campo Metatitle > 300 caracteres|Faker| |
-|Vista General Settings campo Meta Description = 300 caracteres|Faker| |
-|Vista General Settings campo Meta Description > 300 caracteres |Faker| |
-|Vista General Settings campo Site Title = 150 caracteres|Faker| |
-|Vista General Settings campo Site Title > 150 caracteres|Faker| |
-|Vista General Settings campo Site Title < 150 caracteres|Faker| |
-|Vista General Settings campo Site Description = 200 caracteres|Faker| |
-|Vista General Settings campo Site Description > 200 caracteres|Faker| |
-|Vista General Settings campo Site Description < 200 caracteres|Faker| |
-|Twitter title < 300| |
-|Twitter title = 300| |
-|Twitter title > 300| |
-|Twitter Description < 500| |
-|Twitter Description = 500| |
-|Twitter Description > 500| |
-|Design sin protocolo en campo | |
-|Design con protocolo en números | |
-|Design sin url| |
-|Olvido de password con vieja incorrecta - nuevo y confirmación iguales| |
-|Olvido de password con vieja correcta - nuevo  vacio y confirmación lleno| |
-|Olvido de password con vieja correcta - nuevo  lleno y confirmación vacio| |
-|Olvido de password con vieja correcta - nuevo  vacio y confirmación vacio| |
-|Olvido de password con vieja correcta - nuevo  lleno < 10 y confirmación lleno| |
-|Olvido de password con vieja correcta - nuevo  lleno = 10 y confirmación lleno| |
-|Olvido de password con vieja correcta - nuevo  lleno > 10 y confirmación lleno| |
-|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno <10| |
-|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno = 10| |
-|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno > 10| |
-|Perfil Bio < 200| |
-|Perfil Bio = 200| |
-|Perfil Bio > 200| |
-|Post title < 2000| |
-|Post title = 2000| |
-|Post title > 2000| |
-|Post title caracteres especiales| |
-|Members email correcto| |
-|Members solo arroba pegado del dominio| |
-|Members email doble arroba| |
-|Members email sin domino| |
-|Members email con triple domino|Faker y Datos Apriori| |
-|Members caracteres especiales y @ + dominio correctos|Faker y Datos Apriori| |
-|Members nota < 500|Faker| |
-|Members Nota = 500|Faker| |
-|Members Nota > 500|Faker| |
-|Member correo correo mayor a 190|Datos Apriori| |
-|Member correo correo = a 190|Datos Apriori| |
-|Member- portal settings - accent color - 1 numero|Faker| |
-|Member- portal settings - accent color - 2 numeros|Faker| |
-|Member- portal settings - accent color - 3 numeros|Faker| |
-|Member- portal settings - accent color - 4 numeros|Faker| |
-|Member- portal settings - accent color - 5 numeros|Faker| |
-|Member- portal settings - accent color - 6 numeros|Faker| |
-|Member- portal settings - accent color - caracteres especiales|Faker yDatos Apriori| |
-|Profile Website - sin formato|Faker| |
-|Profile Website - caracteres especiales y dominio|Faker| |
-|Profile Website - caracteres especiales sin dominio|Faker| |
-|Integraciones Slack - url sin protocolo|Faker| |
-|Integraciones Slack - url sin formato|Faker| |
-|Integraciones Slack - url caracteres especiales|Faker| |
-|Integración, nueva integración- name > 191|Faker y Datos Apriori| |
-|Integración, nueva integración- name = 191|Faker y Datos Apriori| |
-|Integración, nueva integración- name < 191|Faker y Datos Apriori| |
-|Integration- new web hook - ingresar nombre, ingresar target y click|Faker y Datos Apriori| |
-|Integration- new web hook - sin nombre, seleccionar evento, ingresar target y click|Faker y Datos Apriori| |
-|Integration- new web hook - nombre, seleccionar evento, sin target y click|Faker y Dato Apriori| |
-|Integration- new web hook - sin nombre, seleccionar evento, sin target y click|Faker   y Datos Apriori |
-|View site - Subscribe - sin correo|Faker|Falta un selector siempre cambia|
-|View site - Subscribe - correo sin arroba|Faker|Falta un selector siempre cambia|
-|View site - Subscribe - correo sin dominoFaker|Falta un selector siempre cambia|
-|View site - Subscribe - correo con 3 dominos|Faker|Falta un selector siempre cambia|
+|Password ambos campos correctos| Datos Apriori |
+|Password vacios los dos| Datos Apriori |
+|Password vacio y lleno| Datos Apriori |
+|Password lleno y vacio| Datos Apriori |
+|Password correcto e incorrecto| Datos Apriori |
+|Password incorrecto e correcto| Datos Apriori |
+|Password ambos incorrectos| Datos Apriori |
+|Usuario sin arroba| Datos Apriori |
+|Usuario sin domino| Datos Apriori |
+|Correo con mas de 191 caracteres| Datos Apriori |
+|Correo con 191 caracteres| Datos Apriori |
+|Full name - vacio, Email con datos| Datos Apriori |
+|Full name con datos - Email vacio| Datos Apriori |
+|Email con arroba y dominio sin más texto| Datos Apriori |
+|Email sin arroba| Datos Apriori |
+|Email con arroba sin dominio| Datos Apriori |
+|Email con más de una arroba y un dominio| Datos Apriori |
+|Email con un arroba y 3 dominios| Datos Apriori |
+|Email con longitud mayor a 190| Datos Apriori |
+|Email con longitud igual a 190| Datos Apriori |
+|Full name vacio y email lleno correcto| Datos Apriori |
+|Full name correcto y email vacio| Datos Apriori |
+|Los dos campos vacios| Datos Apriori |
+|Tag vacio con descripción menor a 500| Datos Apriori |
+|Tag vacio con descripción = a 500| Datos Apriori |
+|Tag vacio con descripción > a 500| Datos Apriori |
+|Tag diligenciado con descripción < a 500| Datos Apriori |
+|Tag diligenciado con descripción > a 500| Datos Apriori |
+|Tag diligenciado con descripción = a 500| Datos Apriori |
+|Tags Color un numero| Datos Apriori |
+|Creacion de tags con el campo Color dos numeros|Faker|
+|Creacion de tags con el campo Color tres numeros|Faker|
+|Creacion de Tags con el campo Color cuatro numeros|Faker|
+|Creacion de tags con el campo Color cinco numeros|Faker|
+|Creacion de tags con el campo color seis numeros|Faker|
+|Creacion de tags con el campo color caracteres especiales|Faker|
+|Creacion de tags con el campo Name mayor a 191 caracteres|Faker|
+|Creacion de tags con el campo Name = a 191 caracteres|Faker|
+|Creacion de tags con el campo Slug = 191 caracteres|Faker|
+|Creacion de tags con el campo Slug > 191 caracteres|Faker|
+|Staff invitar nuevo usuario correo correcto- author|Faker|
+|Staff invitar nuevo usuario correo correcto- admin|Faker|
+|Staff invitar nuevo usuario correo correcto- contibutor|Faker|
+|Staff invitar nuevo usuario correo correcto- editor|Faker|
+|Staff invitar nuevo usuario correo incorrecto- author|Faker|
+|Staff invitar nuevo usuario correo incorrecto- admin|Faker|
+|Staff invitar nuevo usuario correo incorrecto- contibutor|Faker|
+|Staff invitar nuevo usuario correo incorrecto- editor|Faker|
+|Staff invitar nuevo usuario sin arroba|Faker|
+|Staff invitar nuevo usuario sin dominio|Faker|
+|Staff invitar nuevo usuario con doble arroba|Faker|
+|Staff invitar nuevo usuario correo mayor a 74 caracteres|Faker|
+|Staff invitar nuevo usuario correo = a 74 caracteres|Faker|
+|Vista General Settings campo Metatitle con 300 caracteres|Faker|
+|Vista General Settings campo Metatitle > 300 caracteres|Faker|
+|Vista General Settings campo Meta Description = 300 caracteres|Faker|
+|Vista General Settings campo Meta Description > 300 caracteres |Faker|
+|Vista General Settings campo Site Title = 150 caracteres|Faker|
+|Vista General Settings campo Site Title > 150 caracteres|Faker|
+|Vista General Settings campo Site Title < 150 caracteres|Faker|
+|Vista General Settings campo Site Description = 200 caracteres|Faker|
+|Vista General Settings campo Site Description > 200 caracteres|Faker|
+|Vista General Settings campo Site Description < 200 caracteres|Faker|
+|Twitter title < 300|
+|Twitter title = 300|
+|Twitter title > 300|
+|Twitter Description < 500|
+|Twitter Description = 500|
+|Twitter Description > 500|
+|Design sin protocolo en campo |
+|Design con protocolo en números |
+|Design sin url|
+|Olvido de password con vieja incorrecta - nuevo y confirmación iguales|
+|Olvido de password con vieja correcta - nuevo  vacio y confirmación lleno|
+|Olvido de password con vieja correcta - nuevo  lleno y confirmación vacio|
+|Olvido de password con vieja correcta - nuevo  vacio y confirmación vacio|
+|Olvido de password con vieja correcta - nuevo  lleno < 10 y confirmación lleno|
+|Olvido de password con vieja correcta - nuevo  lleno = 10 y confirmación lleno|
+|Olvido de password con vieja correcta - nuevo  lleno > 10 y confirmación lleno|
+|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno <10|
+|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno = 10|
+|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno > 10|
+|Perfil Bio < 200|
+|Perfil Bio = 200|
+|Perfil Bio > 200|
+|Post title < 2000|
+|Post title = 2000|
+|Post title > 2000|
+|Post title caracteres especiales|
+|Members email correcto|
+|Members solo arroba pegado del dominio|
+|Members email doble arroba|
+|Members email sin domino|
+|Members email con triple domino|Faker y Datos Apriori|
+|Members caracteres especiales y @ + dominio correctos|Faker y Datos Apriori|
+|Members nota < 500|Faker|
+|Members Nota = 500|Faker|
+|Members Nota > 500|Faker|
+|Member correo correo mayor a 190|Datos Apriori|
+|Member correo correo = a 190|Datos Apriori|
+|Member- portal settings - accent color - 1 numero|Faker|
+|Member- portal settings - accent color - 2 numeros|Faker|
+|Member- portal settings - accent color - 3 numeros|Faker|
+|Member- portal settings - accent color - 4 numeros|Faker|
+|Member- portal settings - accent color - 5 numeros|Faker|
+|Member- portal settings - accent color - 6 numeros|Faker|
+|Member- portal settings - accent color - caracteres especiales|Faker yDatos Apriori|
+|Profile Website - sin formato|Faker|
+|Profile Website - caracteres especiales y dominio|Faker|
+|Profile Website - caracteres especiales sin dominio|Faker|
+|Integraciones Slack - url sin protocolo|Faker|
+|Integraciones Slack - url sin formato|Faker|
+|Integraciones Slack - url caracteres especiales|Faker|
+|Integración, nueva integración- name > 191|Faker y Datos Apriori|
+|Integración, nueva integración- name = 191|Faker y Datos Apriori|
+|Integración, nueva integración- name < 191|Faker y Datos Apriori|
+|Integration- new web hook - ingresar nombre, ingresar target y click|Faker y Datos Apriori|
+|Integration- new web hook - sin nombre, seleccionar evento, ingresar target y click|Faker y Datos Apriori|
+|Integration- new web hook - nombre, seleccionar evento, sin target y click|Faker y Dato Apriori|
+|Integration- new web hook - sin nombre, seleccionar evento, sin target y click|Faker   y Datos Apriori
+|View site - Subscribe - sin correo|Falta un selector siempre cambia|
+|View site - Subscribe - correo sin arroba|Falta un selector siempre cambia|
+|View site - Subscribe - correo sin domino|Falta un selector siempre cambia|
+|View site - Subscribe - correo con 3 dominos|Falta un selector siempre cambia|
