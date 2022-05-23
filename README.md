@@ -49,6 +49,7 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 
     * Nota: Dos casos se encuentran comentados dado que se encontraron dos bugs que afectan considerablemente el comportamiento de la aplicación, ya que se cambia el usuario para ingresar desde la aplicación y esto se haría en tiempo de ejecución de la automatización y generaria que los demás casos empiecen a fallar. Estos casos se encuentran en el archivo perfilUsuario.js y estan entre la lineas 29 a 36. Así que si desea ejecutarlos es necesario descomentar dichas lineas.
 
+
 ## Bugs reportados
     * Se encuentran enla sección de Issues del proyecto en Github
 
@@ -149,8 +150,8 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 |Members solo arroba pegado del dominio|
 |Members email doble arroba|
 |Members email sin domino|
-|Members email con triple domino|Faker y Datos Apriori|
-|Members caracteres especiales y @ + dominio correctos|Faker y Datos Apriori|
+|Members email con triple domino|Faker|Datos Apriori|
+|Members caracteres especiales y @ + dominio correctos|Faker|Datos Apriori|
 |Members nota < 500|Faker|
 |Members Nota = 500|Faker|
 |Members Nota > 500|Faker|
@@ -162,20 +163,20 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 |Member- portal settings - accent color - 4 numeros|Faker|
 |Member- portal settings - accent color - 5 numeros|Faker|
 |Member- portal settings - accent color - 6 numeros|Faker|
-|Member- portal settings - accent color - caracteres especiales|Faker yDatos Apriori|
+|Member- portal settings - accent color - caracteres especiales|Faker|Datos Apriori|
 |Profile Website - sin formato|Faker|
 |Profile Website - caracteres especiales y dominio|Faker|
 |Profile Website - caracteres especiales sin dominio|Faker|
 |Integraciones Slack - url sin protocolo|Faker|
 |Integraciones Slack - url sin formato|Faker|
 |Integraciones Slack - url caracteres especiales|Faker|
-|Integración, nueva integración- name > 191|Faker y Datos Apriori|
-|Integración, nueva integración- name = 191|Faker y Datos Apriori|
-|Integración, nueva integración- name < 191|Faker y Datos Apriori|
-|Integration- new web hook - ingresar nombre, ingresar target y click|Faker y Datos Apriori|
-|Integration- new web hook - sin nombre, seleccionar evento, ingresar target y click|Faker y Datos Apriori|
-|Integration- new web hook - nombre, seleccionar evento, sin target y click|Faker y Dato Apriori|
-|Integration- new web hook - sin nombre, seleccionar evento, sin target y click|Faker   y Datos Apriori
+|Integración, nueva integración- name > 191|Faker|Datos Apriori|
+|Integración, nueva integración- name = 191|Faker|Datos Apriori|
+|Integración, nueva integración- name < 191|Faker|Datos Apriori|
+|Integration- new web hook - ingresar nombre, ingresar target y click|Faker|Datos Apriori|
+|Integration- new web hook - sin nombre, seleccionar evento, ingresar target y click|Faker|Datos Apriori|
+|Integration- new web hook - nombre, seleccionar evento, sin target y click|Faker|Datos Apriori|
+|Integration- new web hook - sin nombre, seleccionar evento, sin target y click|Faker|Datos Apriori|
 |View site - Subscribe - sin correo|Falta un selector siempre cambia|
 |View site - Subscribe - correo sin arroba|Falta un selector siempre cambia|
 |View site - Subscribe - correo sin domino|Falta un selector siempre cambia|
