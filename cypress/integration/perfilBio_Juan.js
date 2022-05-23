@@ -3,7 +3,7 @@ require("cypress-xpath");
 
 let user = '';
 let password = '';
-let port = '2368';
+let port = '3001';
 let tagName = '';
 describe('new tags', () => {
     beforeEach(() => {

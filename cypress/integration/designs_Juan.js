@@ -1,7 +1,7 @@
 import {faker} from '@faker-js/faker'
 require("cypress-xpath");
 
-let port = '2368';
+let port = '3001';
 let user = '';
 let password = '';
 
