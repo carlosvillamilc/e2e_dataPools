@@ -72,4 +72,44 @@ describe('Permite crear un member con mas de dos dominios', () => {
         cy.get('button[class="gh-btn gh-btn-blue gh-btn-icon ember-view"]').click() 
     })
 
+    it('Email member correcto', () => {       
+        cy.get('#ember8').type(user)
+        cy.get('#ember10').type(password)
+        cy.get('#ember12').click()        
+        cy.get('a[href="#/members/"]').eq(0).click()
+        cy.get('a[href="#/members/new/"]').eq(0).click()
+        cy.get('#member-email').type(emailCaracteres)
+        cy.get('button[class="gh-btn gh-btn-blue gh-btn-icon ember-view"]').click() 
+    })
+
+    it('Members solo arroba pegado del dominio', () => {       
+        cy.get('#ember8').type(user)
+        cy.get('#ember10').type(password)
+        cy.get('#ember12').click()        
+        cy.get('a[href="#/members/"]').eq(0).click()
+        cy.get('a[href="#/members/new/"]').eq(0).click()
+        cy.get('#member-email').type('@gmail.com')
+        cy.get('button[class="gh-btn gh-btn-blue gh-btn-icon ember-view"]').click() 
+    })
+
+    it('Members solo arroba pegado del dominio', () => {       
+        cy.get('#ember8').type(user)
+        cy.get('#ember10').type(password)
+        cy.get('#ember12').click()        
+        cy.get('a[href="#/members/"]').eq(0).click()
+        cy.get('a[href="#/members/new/"]').eq(0).click()
+        cy.get('#member-email').type('emailrandom@@gmail.com')
+        cy.get('button[class="gh-btn gh-btn-blue gh-btn-icon ember-view"]').click() 
+    })
+
+    it('Members email sin domino', () => {       
+        cy.get('#ember8').type(user)
+        cy.get('#ember10').type(password)
+        cy.get('#ember12').click()        
+        cy.get('a[href="#/members/"]').eq(0).click()
+        cy.get('a[href="#/members/new/"]').eq(0).click()
+        cy.get('#member-email').type('emailrandom@nodominio')
+        cy.get('button[class="gh-btn gh-btn-blue gh-btn-icon ember-view"]').click() 
+    })
+
 })
