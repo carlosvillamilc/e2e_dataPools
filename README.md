@@ -54,7 +54,7 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 
 ## Detalle de casos y estrategia utilizada
 
-|Caso|DataPool|
+|Caso|DataPool|Estado|
 |-|-|
 |Password ambos campos correctos| Datos Apriori |
 |Password vacios los dos| Datos Apriori |
@@ -176,7 +176,7 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 |Integration- new web hook - sin nombre, seleccionar evento, ingresar target y click|Faker y Datos Apriori|
 |Integration- new web hook - nombre, seleccionar evento, sin target y click|Faker y Dato Apriori|
 |Integration- new web hook - sin nombre, seleccionar evento, sin target y click|Faker   y Datos Apriori
-|View site - Subscribe - sin correo|Falta un selector siempre cambia|
-|View site - Subscribe - correo sin arroba|Falta un selector siempre cambia|
-|View site - Subscribe - correo sin domino|Falta un selector siempre cambia|
-|View site - Subscribe - correo con 3 dominos|Falta un selector siempre cambia|
+|View site - Subscribe - sin correo|||Falta un selector siempre cambia|
+|View site - Subscribe - correo sin arroba|||Falta un selector siempre cambia|
+|View site - Subscribe - correo sin domino|||Falta un selector siempre cambia|
+|View site - Subscribe - correo con 3 dominos|||Falta un selector siempre cambia|
