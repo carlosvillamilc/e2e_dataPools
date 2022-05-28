@@ -7,7 +7,7 @@ let email = faker.internet.email();
 let noteless500 = faker.name.findName();
 let noteEqual500 = 'wyMqzNwdMQcyiMTkSbSBEGvrNPiiADTtnHZBMjPFiELqgxejzNkahaNzfvVxFRkzveBkUNXnWajFfrqfurpCJBjwYJybHyZGjvfmkTxaKRtpQFmCCTaLnqUCPxadDApzpGDZzLDmxdeYrSKhZNUEnytAZeSVAbiVhUKvdqeepdcTqbHHzwGKSaNSSGiFdpZadWeMASdaJdtVLWKTwiGrKLZpSGmZyNTqBYuvKbWkaGZEvGgUMSZKXdEndQKbuehgBuhkGNrgZbNeiMuPbppnwZYCxWPPTbJrXYngFRFVMngikemHccdzgAxmTpmiwqtJTNnDGMEArLLCdwfGJznkjzBQmAewRtUADMMNAKpjMFXhPYVpjjNXymxetKKaggHabFHbtrEKgpiYcfpnqaxEBJUdmrNxLHjnPdUqaJfuDPWmSSYJmDxiJcuuTjJyDNxnWMgXkQSWrjNcAxxzeGtxWaDpVJMEuefHGCNfzhBqXxYGvjbLkTzE';
 let notemore500 = faker.lorem.paragraphs(4);
-let port = '3001';
+
 
 
 describe('Permite crear un member con notas', () => {

@@ -8,7 +8,7 @@ let emailCaracteres = 'ae+'+ faker.internet.email();
 let emailblanks = 'aec '+ faker.internet.email();
 let emailMore190 = 'TUerAZdThtcKYGmzcbRuESGLLTjLZYQxahknbbSQwwKnTftcfgJcMMDeCpfwfeYAxTyCiNGkxLGyPDtkUWrNjABTWNQgQHnmiLqQJTRyKuzHVmHNtfKqGVdRwkbNTVpajWmNmwmGWPgAaCCjBhnmEzFbMCreAypYfNfnDYzKVAwNGzPzq@hotmail.com.co';
 let emailEqual190 = faker.internet.email();
-let port = '3001';
+
 
 
 

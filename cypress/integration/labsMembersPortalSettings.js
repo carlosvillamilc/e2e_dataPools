@@ -10,7 +10,7 @@ let numberColor4 = faker.datatype.number({ min: 1, max: 4});
 let numberColor5 = faker.datatype.number({ min: 1, max: 5});
 let numberColor6 = faker.datatype.number({ min: 1, max: 6});
 let numberColorSpecialCaracteres = 'S';
-let port = '3001';
+
 
 
 

@@ -6,7 +6,7 @@ let password = '';
 let website = faker.internet.domainWord();
 let websiteSpecialCharacter = '+' + faker.internet.domainWord();
 let websiteWithoutDomain = '*' + faker.internet.domainSuffix();
-let port = '3001';
+
 
 
 
