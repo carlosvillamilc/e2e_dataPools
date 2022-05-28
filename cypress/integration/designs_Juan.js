@@ -25,6 +25,7 @@ describe('Design Cases', () => {
         cy.get('a[href="#/settings/design/"]').eq(0).click()
     
     //    cy.get('button[class="gh-blognav-add"]').click()
+        cy.wait(2000)
         cy.get('button[class="gh-btn gh-btn-blue gh-btn-icon ember-view"]').click()
 
         cy.get('div.gh-nav-bottom').click()

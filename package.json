@@ -13,5 +13,8 @@
     "cypress": "^9.6.1",
     "cypress-xpath": "^1.6.2",
     "faker": "^5.5.3"
+  },
+  "dependencies": {
+    "xpath": "^0.0.32"
   }
 }
