@@ -6,6 +6,7 @@ let email = faker.internet.email();
 let noteless500 = faker.name.findName();
 let noteEqual500 = 'wyMqzNwdMQcyiMTkSbSBEGvrNPiiADTtnHZBMjPFiELqgxejzNkahaNzfvVxFRkzveBkUNXnWajFfrqfurpCJBjwYJybHyZGjvfmkTxaKRtpQFmCCTaLnqUCPxadDApzpGDZzLDmxdeYrSKhZNUEnytAZeSVAbiVhUKvdqeepdcTqbHHzwGKSaNSSGiFdpZadWeMASdaJdtVLWKTwiGrKLZpSGmZyNTqBYuvKbWkaGZEvGgUMSZKXdEndQKbuehgBuhkGNrgZbNeiMuPbppnwZYCxWPPTbJrXYngFRFVMngikemHccdzgAxmTpmiwqtJTNnDGMEArLLCdwfGJznkjzBQmAewRtUADMMNAKpjMFXhPYVpjjNXymxetKKaggHabFHbtrEKgpiYcfpnqaxEBJUdmrNxLHjnPdUqaJfuDPWmSSYJmDxiJcuuTjJyDNxnWMgXkQSWrjNcAxxzeGtxWaDpVJMEuefHGCNfzhBqXxYGvjbLkTzE';
 let notemore500 = faker.lorem.paragraphs(4);
+let port = '3001';
 
 
 describe('Permite crear un member con notas', () => {
@@ -15,7 +16,7 @@ describe('Permite crear un member con notas', () => {
             user = data.user
             password = data.password
         })
-        cy.visit('http://localhost:3001/ghost/')
+        cy.visit(`http://localhost:${port}/ghost/`)
         cy.wait(2000)        
         
     })

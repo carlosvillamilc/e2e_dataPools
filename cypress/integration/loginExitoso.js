@@ -1,6 +1,6 @@
 // type definitions for Cypress object "cy"
 // <reference types="cypress" />
-let port = '2369';
+let port = '3001';
 const availablefixtures = [
     {
         "name": "datosApriori",

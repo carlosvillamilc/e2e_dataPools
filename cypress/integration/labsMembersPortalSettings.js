@@ -9,7 +9,7 @@ let numberColor4 = faker.datatype.number({ min: 1, max: 4});
 let numberColor5 = faker.datatype.number({ min: 1, max: 5});
 let numberColor6 = faker.datatype.number({ min: 1, max: 6});
 let numberColorSpecialCaracteres = 'S';
-
+let port = '3001';
 
 
 
@@ -20,7 +20,7 @@ describe('Permite SetUp el portal de members', () => {
             user = data.user
             password = data.password
         })
-        cy.visit('http://localhost:2368/ghost/')
+        cy.visit(`http://localhost:${port}/ghost/`)
         cy.wait(2000)        
         
     })

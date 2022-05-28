@@ -5,7 +5,7 @@ let password = '';
 let website = faker.internet.domainWord();
 let websiteSpecialCharacter = '+' + faker.internet.domainWord();
 let websiteWithoutDomain = '*' + faker.internet.domainSuffix();
-
+let port = '3001';
 
 
 
@@ -16,7 +16,7 @@ describe('Permite configurar la pagina en el perfil personal', () => {
             user = data.user
             password = data.password
         })
-        cy.visit('http://localhost:3001/ghost/')
+        cy.visit(`http://localhost:${port}/ghost/`)
         cy.wait(2000)        
         
     })

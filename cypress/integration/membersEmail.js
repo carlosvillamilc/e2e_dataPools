@@ -7,6 +7,7 @@ let emailCaracteres = 'ae+'+ faker.internet.email();
 let emailblanks = 'aec '+ faker.internet.email();
 let emailMore190 = 'TUerAZdThtcKYGmzcbRuESGLLTjLZYQxahknbbSQwwKnTftcfgJcMMDeCpfwfeYAxTyCiNGkxLGyPDtkUWrNjABTWNQgQHnmiLqQJTRyKuzHVmHNtfKqGVdRwkbNTVpajWmNmwmGWPgAaCCjBhnmEzFbMCreAypYfNfnDYzKVAwNGzPzq@hotmail.com.co';
 let emailEqual190 = faker.internet.email();
+let port = '3001';
 
 
 
@@ -17,7 +18,7 @@ describe('Permite crear un member con mas de dos dominios', () => {
             user = data.user
             password = data.password
         })
-        cy.visit('http://localhost:3001/ghost/')
+        cy.visit(`http://localhost:${port}/ghost/`)
         cy.wait(2000)        
         
     })
