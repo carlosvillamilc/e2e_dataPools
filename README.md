@@ -6,6 +6,8 @@
     * Realizar la instalación de Ghost en una imagen de Docker.
     * Tener instalado Git en su máquina. (No se explica en este Readme)
     * Tener instalaso Visual Studio Code. (No se explica en este Readme)
+    * Tener instalado Node JS. (No se explica en este Readme)
+    * Tener instalado Cypress. (No se explica en este Readme)
 
 1. Realizar la instalación de Docker:
 * 		En este link buscan su sistema operativo e instalan el Docker -> https://docs.docker.com/desktop/mac/install/
@@ -39,15 +41,22 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
   
 10. La herramienta usada para la ejecución de las pruebas es Cypress, por lo tanto debe tenerla instalada en el computador.
 
-11. Abra una nueva terminal desde Visual
+11. Abra una nueva terminal
 
 12. Ejecute el comando: npm install
+   
+12.5. Revisar si efectivamente se instalo la herramienta Faker, si no se instalo automaticamente,  usar el siguiente comando npm install @faker-js/faker --save-dev
   
 13. En la consola digite el comando `cypress open`, el cual abrira la interfaz grafica de cypress y desde allí debe abrir la carpeta donde alojo su proyecto.
 
 14. Desde allí podrá ejecutar los casos uno a uno dando click en el nombre de cada uno de ellos o podra seleccionar la opción que dice "Run 120 integration specs.
 
     * Nota: Dos casos se encuentran comentados dado que se encontraron dos bugs que afectan considerablemente el comportamiento de la aplicación, ya que se cambia el usuario para ingresar desde la aplicación y esto se haría en tiempo de ejecución de la automatización y generaria que los demás casos empiecen a fallar. Estos casos se encuentran en el archivo perfilUsuario.js y estan entre la lineas 29 a 36. Así que si desea ejecutarlos es necesario descomentar dichas lineas.
+
+## IMPORTANTE:
+### LOS CASOS DE CAMBIAR CONTRASEÑA, EJECUTARLOS AL FINAL, DEBIDO A QUE SE PUEDE CAMBIAR LA CONTRASEÑA ACCIDENTALMENTE Y LUEGO SERA DIFICIL LOGEARSE. 
+### SI EMPIEZA A PRESETAR ERRORES DE LOG IN, ES PORQUE PASO DE 100 VECES PERMITIDOS POR GHOST, ENTONCES DEBEMOS ELIMINAR LA IMAGEN DE DOCKER Y VOLVER A CREARLA Y SEGUIR CORRIENDO LOS CASOS 
+   
 
 ## Bugs reportados
     * Se encuentran enla sección de Issues del proyecto en Github
@@ -86,16 +95,16 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 |Tag diligenciado con descripción > a 500| Datos Apriori |
 |Tag diligenciado con descripción = a 500| Datos Apriori |
 |Tags Color un numero| Datos Apriori |
-|Tags Color dos numeros|Faker|
-|Tags Color tres numeros|Faker|
-|Tags Color cuatro numeros|Faker|
-|Tags Color cinco numeros|Faker|
-|Tags Color seis numeros|Faker|
-|Tags Color caracteres especiales|Faker|
-|Name mayor a 191|Faker|
-|Name = a 191|Faker|
-|Slug = 191|Faker|
-|Slug > 191|Faker|
+|Creacion de tags con el campo Color dos numeros|Faker|
+|Creacion de tags con el campo Color tres numeros|Faker|
+|Creacion de Tags con el campo Color cuatro numeros|Faker|
+|Creacion de tags con el campo Color cinco numeros|Faker|
+|Creacion de tags con el campo color seis numeros|Faker|
+|Creacion de tags con el campo color caracteres especiales|Faker|
+|Creacion de tags con el campo Name mayor a 191 caracteres|Faker|
+|Creacion de tags con el campo Name = a 191 caracteres|Faker|
+|Creacion de tags con el campo Slug = 191 caracteres|Faker|
+|Creacion de tags con el campo Slug > 191 caracteres|Faker|
 |Staff invitar nuevo usuario correo correcto- author|Faker|
 |Staff invitar nuevo usuario correo correcto- admin|Faker|
 |Staff invitar nuevo usuario correo correcto- contibutor|Faker|
@@ -109,77 +118,74 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 |Staff invitar nuevo usuario con doble arroba|Faker|
 |Staff invitar nuevo usuario correo mayor a 74 caracteres|Faker|
 |Staff invitar nuevo usuario correo = a 74 caracteres|Faker|
-|General Settings Metatitle = 300|Faker|
-|Metatitle > 300|Faker|
-|Meta Description = 300|Faker|
-|Meta Description > 300|Faker|
-|Site Title = 150 caracteres|Faker|
-|Site Title > 150 caracteres|Faker|
-|Site Title < 150 caracteres|Faker|
-|Site Description = 200 caracteres|Faker|
-|Site Description > 200 caracteres|Faker|
-|Site Description < 200 caracteres|Faker|
-|Canonical URL = 2000|
-|Canonical URL < 2000|
-|Canonical URL >2000|
-|Twitter title < 300|
-|Twitter title = 300|
-|Twitter title > 300|
-|Twitter Description < 500|
-|Twitter Description = 500|
-|Twitter Description > 500|
-|Design sin protocolo en campo |
-|Design con protocolo en números |
-|Design sin url|
-|Olvido de password con vieja incorrecta - nuevo y confirmación iguales|
-|Olvido de password con vieja correcta - nuevo  vacio y confirmación lleno|
-|Olvido de password con vieja correcta - nuevo  lleno y confirmación vacio|
-|Olvido de password con vieja correcta - nuevo  vacio y confirmación vacio|
-|Olvido de password con vieja correcta - nuevo  lleno < 10 y confirmación lleno|
-|Olvido de password con vieja correcta - nuevo  lleno = 10 y confirmación lleno|
-|Olvido de password con vieja correcta - nuevo  lleno > 10 y confirmación lleno|
-|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno <10|
-|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno = 10|
-|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno > 10|
-|Perfil Bio < 200|
-|Perfil Bio = 200|
-|Perfil Bio > 200|
-|Post title < 2000|
-|Post title = 2000|
-|Post title > 2000|
-|Post title caracteres especiales|
-|Members email correcto|
-|Members solo arroba pegado del dominio|
-|Members email doble arroba|
-|Members email sin domino|
-|Members email con triple domino|
-|Members caracteres especiales y @ + dominio correctos|
-|Members nota < 500|
-|Members Nota = 500|
-|Members Nota > 500|
-|Member correo correo mayor a 190|
-|Member correo correo = a 190|
-|Member- portal settings - accent color - 1 numero|
-|Member- porta settings - accent color - 2 numeros|
-|Member- porta settings - accent color - 3 numeros|
-|Member- porta settings - accent color - 4 numeros|
-|Member- portal settings - accent color - 5 numeros|
-|Member- portal settings - accent color - 6 numeros|
-|Member- portal settings - accent color - caracteres especiales|
-|Profile Website - sin formato|
-|Profile Website - caracteres especiales y dominio|
-|Profile Website - caracteres especiales sin dominio|
-|Integraciones Slack - url sin protocolo|
-|Integraciones Slack - url sin formato|
-|Integraciones Slack - url caracteres especiales|
-|Integración, nueva integración- name > 191|
-|Integración, nueva integración- name = 191|
-|Integración, nueva integración- name < 191|
-|Integration- new web hook - ingresar nombre, ingresar target y click|
-|Integration- new web hook - sin nombre, seleccionar evento, ingresar target y click|
-|Integration- new web hook - nombre, seleccionar evento, sin target y click|
-|Integration- new web hook - sin nombre, seleccionar evento, sin target y click|
-|View site - Subscribe - sin correo|
-|View site - Subscribe - correo sin arroba|
-|View site - Subscribe - correo sin domino|
-|View site - Subscribe - correo con 3 dominos|
+|Vista General Settings campo Metatitle con 300 caracteres|Faker|
+|Vista General Settings campo Metatitle > 300 caracteres|Faker|
+|Vista General Settings campo Meta Description = 300 caracteres|Faker|
+|Vista General Settings campo Meta Description > 300 caracteres |Faker|
+|Vista General Settings campo Site Title = 150 caracteres|Faker|
+|Vista General Settings campo Site Title > 150 caracteres|Faker|
+|Vista General Settings campo Site Title < 150 caracteres|Faker|
+|Vista General Settings campo Site Description = 200 caracteres|Faker|
+|Vista General Settings campo Site Description > 200 caracteres|Faker|
+|Vista General Settings campo Site Description < 200 caracteres|Faker|
+|Twitter title < 300| Datos Apriori |
+|Twitter title = 300|Datos Apriori |
+|Twitter title > 300|Datos Apriori |
+|Twitter Description < 500|Datos Apriori |
+|Twitter Description = 500|Datos Apriori |
+|Twitter Description > 500|Datos Apriori |
+|Design sin protocolo en campo |Datos Apriori |
+|Design con protocolo en números |Datos Apriori |
+|Design sin url|Datos Apriori |
+|Olvido de password con vieja incorrecta - nuevo y confirmación iguales|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  vacio y confirmación lleno|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno y confirmación vacio|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  vacio y confirmación vacio|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno < 10 y confirmación lleno|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno = 10 y confirmación lleno|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno > 10 y confirmación lleno|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno <10|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno = 10|Datos Apriori |
+|Olvido de password con vieja correcta - nuevo  lleno  y confirmación lleno > 10|Datos Apriori |
+|Perfil Bio < 200|Faker|
+|Perfil Bio = 200|Faker|
+|Perfil Bio > 200|Faker|
+|Post title < 2000|Faker|
+|Post title = 2000|Faker|
+|Post title > 2000|Faker|
+|Post title caracteres especiales|Datos Apriori |
+|Members email correcto|Datos Apriori |
+|Members solo arroba pegado del dominio|Datos Apriori |
+|Members email doble arroba|Datos Apriori |
+|Members email sin domino|Datos Apriori |
+|Members email con triple domino|Datos Apriori |
+|Members caracteres especiales y @ + dominio correctos|Faker y Datos Apriori|
+|Members nota < 500|Faker|
+|Members Nota = 500|Faker|
+|Members Nota > 500|Faker|
+|Member correo correo mayor a 190|Datos Apriori|
+|Member correo correo = a 190|Datos Apriori|
+|Member- portal settings - accent color - 1 numero|Faker|
+|Member- portal settings - accent color - 2 numeros|Faker|
+|Member- portal settings - accent color - 3 numeros|Faker|
+|Member- portal settings - accent color - 4 numeros|Faker|
+|Member- portal settings - accent color - 5 numeros|Faker|
+|Member- portal settings - accent color - 6 numeros|Faker|
+|Member- portal settings - accent color - caracteres especiales|Faker y Datos Apriori|
+|Profile Website - sin formato|Faker|
+|Profile Website - caracteres especiales y dominio|Faker|
+|Profile Website - caracteres especiales sin dominio|Faker|
+|Integraciones Slack - url sin protocolo|Faker|
+|Integraciones Slack - url sin formato|Faker|
+|Integraciones Slack - url caracteres especiales|Faker|
+|Integración, nueva integración- name > 191|Faker y Datos Apriori|
+|Integración, nueva integración- name = 191|Faker y Datos Apriori|
+|Integración, nueva integración- name < 191|Faker y Datos Apriori|
+|Integration- new web hook - ingresar nombre, ingresar target y click|Faker y Datos Apriori|
+|Integration- new web hook - sin nombre, seleccionar evento, ingresar target y click|Faker y Datos Apriori|
+|Integration- new web hook - nombre, seleccionar evento, sin target y click|Faker y Datos Apriori|
+|Integration- new web hook - sin nombre, seleccionar evento, sin target y click|Faker y Datos Apriori|
+|View site - Subscribe - sin correo|Falta un selector siempre cambia|
+|View site - Subscribe - correo sin arroba|Falta un selector siempre cambia|
+|View site - Subscribe - correo sin domino|Falta un selector siempre cambia|
+|View site - Subscribe - correo con 3 dominos|Falta un selector siempre cambia|

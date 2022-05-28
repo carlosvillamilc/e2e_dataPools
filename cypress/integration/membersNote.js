@@ -1,5 +1,6 @@
 import {faker} from '@faker-js/faker'
 
+let port = '3001';
 let user = '';
 let password = '';
 let email = faker.internet.email();
