@@ -59,7 +59,6 @@ describe('new tags', () => {
 
         it('Set MetaData, MetaTitle > 300 characters', () => {           
             let titleTest= faker.lorem.slug(200)
-
             cy.get('#ember8').type(user)
             cy.get('#ember10').type(password)
             cy.get('#ember12').click()        
@@ -78,8 +77,8 @@ describe('new tags', () => {
             cy.get('div.gh-nav-bottom').click()
             cy.wait(100)
             cy.get('a[href="#/signout/"]').click()
-            cy.wait(100)
-            cy.contains('Leave').click()
+            //cy.wait(100)
+            //cy.contains('Leave').click()
         })
 
         it('Set MetaDescription, MetaDescription = 500 characters', () => {           
@@ -124,7 +123,6 @@ describe('new tags', () => {
 
         it('Set MetaDescription, MetaDescription > 500 characters', () => {           
             let descriptionTest= faker.lorem.slug(200)
-
             cy.get('#ember8').type(user)
             cy.get('#ember10').type(password)
             cy.get('#ember12').click()        

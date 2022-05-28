@@ -45,7 +45,13 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 
 12. Ejecute el comando: npm install
    
+<<<<<<< HEAD
 12.5. Revisar si efectivamente se instalo la herramienta Faker, si no se instalo automaticamente,  usar el siguiente comando npm install @faker-js/faker --save-dev
+=======
+12.1. Revisar si efectivamente se instalo la herramienta Faker, si no se instalo automaticamente,  usar el siguiente comando npm install @faker-js/faker --save-dev
+   
+12.2. Revisar si efectivamente se instalo el XPATH, si no se instalo automaticamente, usar el siguiente comando npm install xpath.
+>>>>>>> 09c2dcd261ecf9c00d0220468baf3fa7b1033540
   
 13. En la consola digite el comando `cypress open`, el cual abrira la interfaz grafica de cypress y desde allí debe abrir la carpeta donde alojo su proyecto.
 

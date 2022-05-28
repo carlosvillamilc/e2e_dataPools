@@ -5,6 +5,9 @@ let user = '';
 let password = '';
 let port = '3001';
 let tagName = '';
+let newIntegrationless2000 ='PznxxFDQUidStLeQiNWWPdpNcyWdEDgLDVBNumdqSxfyjipiBfeXmwVhUEjCEfnMhtfmRevTttJdgEWSuZGbEyKxupPQGHYcBXMEejXydKMdjByxXXgNAkTHgzFuFHWbFwWeMADhjnuMzjpXmVFRyfLTtHZkrRWeTDQvGreLGgtVCfbpnnGUCkDAyGkEEJJA';
+let newIntegrationEqual2000 = 'iKwhUfWbzrUYCjTHFyDibxNfQAPqYdHcydKYxYfVpzeuiHPdtvKUjjBHuKGvSFwvGdbrmWwQgRKpvAAVmJqYkBJYurArQQyhSSrviXJXtqyUSpKbumVZqibwRtKqnKCdpvJAHLfKQQdEzTfZnkFFaFRpCaJfkREHqFfzLqzJbufExPBztzbrdCbZSwkLegjXJgNJyPrMgLNYWmmnEUhBrEpCwXDXcYbTaHxygakgwQyGvVMMXYWFbFkphAfMGZbjHuxRHmHYGHHQaTCqSXFxFbdrjqpEPBfqYEBjSnTVmdBSYfFcbckHLKEgmNTMgHLUQiZUZMwPwEriEizSBSzVhrjDeCufbuEZqWLyfdTKhFMdqMDTpTraQShUkaVXNuyJWxVzaqQKpzbDmrbpdGZVNcJMiruxcwcDTeKktRznhxEazkEJJTaWYzhJEMZhyyAKRWiLGdPEaMxTTfnyjCEZhLLnrwPyZHDkWPmrnaJdrCAEcjvFSqnpPgraKncFfzVHXfTVJZTTCkXRtqXYgaNBaqaCmiabjBRdgewZaccnnpfBQzLfGrYetuPgRWwmkyvHhgHHBgJnnpdNvHxkfMSduMGeXMRDvecuYwNZRTbUiahgLMyLhZZKLXhTquEGyuHgegKQSpCvHmnReuTuGHJFvRugApcxrEnZQRQWvAVfvNxUcFdeGLqyivXDiBqBRhJDKggKGtFnLhpFrUpLBvHGtWVAYjSEEryaHpDuKaxJqGdSiwUQbqTBTWUuLFBeXwHQyXcjcthwXrwwHhjVKkHBBCALfpxdqWBNGhNMSWEXYxnKgzkxfwqCFmTtBGVExgprPrZzpfnEqBvdFkefcUkrQrLNPLfYKUmvwAaHNmVuALxMLabKbLPQkXBrKwxVAkYYDEZQCnqifMBzQCLRBQkxfZztExejyzGXyiYamnjdkAcLNwpVkaCtJmveuLQqLBKQuRdJgpnBEjRzbtFxQFnDRWyVvSgTGAZnZhKVScwcxYDtYkeBdunpLyFMeRVbhHJiJXSRnETVcFcvWEgdnfSwehbpWKQumyHzJGZBYTxvFQcAZCKPypkUuXLYjtBHadZyLvvUPjYQhjKTnjyGFFMCXBPDYgiNDNyUMCjPnPZBkPRhKiAeBrebpfpzjeRntGPZzpiLeaMNrSgUgktSJCVmQvNMmXUQpvCCqHuDDDPYYzzeHNtetivTNSqRGqPeKTYrFZKjwwDynUXaYfStVYWaxGzDFKCyQTKGagSpCxPRGLUxMJmmUMVcPPVUfEGQyBnCZapCrvAcJWbJEgCJajYqwbxFbxdTxUtGTHdVeFWRSENgWQHKSeSWUYhxyhFcXKbTkdutnNhfpSRpkykSWqSeXdEpWNfTmAXaXBVfDDcNRXXahaMbYgWmTqMkCwfgNJYDtefFBeiKaZanDUKJQZvvuzVkRmBzSNvWjwBbaGukBMUXeWzpRMRwYWeKcqktcwJvLrmFdnaKckYLTGcwZhCALQRJGznaiXrdrmhGZjjUyggXkArPXXEKwehKzBaPmwqXpZxjeQgiWKTKDvGpShCSzXfUMnEWtHcwagbbGvFCjmtnFEtVSUxppucuAnLiGbgHvECrDzxjxUNMLDvxXkhcXmpbrYRMyvdqXzrbCNjpVUZnQeNkBXBmRMLfGFYNVPGBkdSMxmqQQnTRpjZtBWFVetJeyVeqeuXGFDtcmJgdkWQPgxnTwPhcKLQdgjYEyeXducpMGPqBuDYkTUcJdPLqHXUuKCPupmiZQrPbTmAQpnkWDwVHZURptuUbBKuZWearvSWuhxxERUZjtjKEGdfSYyDJcbceFiEQEBEXpjXemruWdYbxHrvSEpNTLpGkZfGkiRzVujURwfUhXDEnSVYAGFGMKnxUTHcHeiyDmYcwrknWqdKRzhvykAtzNDXQFtdBtRvhqjfxVRStqkbyaGPqMdbaqKbvTbCGcBTRRYZNPDJLgHijbvatJDWHezwuXfcRyxhHHqKYKKByMrGC';
+let newIntegrationMorel2000 = 'iKwhUfWbzrUYCjTHFyDibxNfQAPqYdHcydKYxYfVpzeuiHPdtvKUjjBHuKGvSFwvGdbrmWwQgRKpvAAVmJqYkBJYurArQQyhSSrviXJXtqyUSpKbumVZqibwRtKqnKCdpvJAHLfKQQdEzTfZnkFFaFRpCaJfkREHqFfzLqzJbufExPBztzbrdCbZSwkLegjXJgNJyPrMgLNYWmmnEUhBrEpCwXDXcYbTaHxygakgwQyGvVMMXYWFbFkphAfMGZbjHuxRHmHYGHHQaTCqSXFxFbdrjqpEPBfqYEBjSnTVmdBSYfFcbckHLKEgmNTMgHLUQiZUZMwPwEriEizSBSzVhrjDeCufbuEZqWLyfdTKhFMdqMDTpTraQShUkaVXNuyJWxVzaqQKpzbDmrbpdGZVNcJMiruxcwcDTeKktRznhxEazkEJJTaWYzhJEMZhyyAKRWiLGdPEaMxTTfnyjCEZhLLnrwPyZHDkWPmrnaJdrCAEcjvFSqnpPgraKncFfzVHXfTVJZTTCkXRtqXYgaNBaqaCmiabjBRdgewZaccnnpfBQzLfGrYetuPgRWwmkyvHhgHHBgJnnpdNvHxkfMSduMGeXMRDvecuYwNZRTbUiahgLMyLhZZKLXhTquEGyuHgegKQSpCvHmnReuTuGHJFvRugApcxrEnZQRQWvAVfvNxUcFdeGLqyivXDiBqBRhJDKggKGtFnLhpFrUpLBvHGtWVAYjSEEryaHpDuKaxJqGdSiwUQbqTBTWUuLFBeXwHQyXcjcthwXrwwHhjVKkHBBCALfpxdqWBNGhNMSWEXYxnKgzkxfwqCFmTtBGVExgprPrZzpfnEqBvdFkefcUkrQrLNPLfYKUmvwAaHNmVuALxMLabKbLPQkXBrKwxVAkYYDEZQCnqifMBzQCLRBQkxfZztExejyzGXyiYamnjdkAcLNwpVkaCtJmveuLQqLBKQuRdJgpnBEjRzbtFxQFnDRWyVvSgTGAZnZhKVScwcxYDtYkeBdunpLyFMeRVbhHJiJXSRnETVcFcvWEgdnfSwehbpWKQumyHzJGZBYTxvFQcAZCKPypkUuXLYjtBHadZyLvvUPjYQhjKTnjyGFFMCXBPDYgiNDNyUMCjPnPZBkPRhKiAeBrebpfpzjeRntGPZzpiLeaMNrSgUgktSJCVmQvNMmXUQpvCCqHuDDDPYYzzeHNtetivTNSqRGqPeKTYrFZKjwwDynUXaYfStVYWaxGzDFKCyQTKGagSpCxPRGLUxMJmmUMVcPPVUfEGQyBnCZapCrvAcJWbJEgCJajYqwbxFbxdTxUtGTHdVeFWRSENgWQHKSeSWUYhxyhFcXKbTkdutnNhfpSRpkykSWqSeXdEpWNfTmAXaXBVfDDcNRXXahaMbYgWmTqMkCwfgNJYDtefFBeiKaZanDUKJQZvvuzVkRmBzSNvWjwBbaGukBMUXeWzpRMRwYWeKcqktcwJvLrmFdnaKckYLTGcwZhCALQRJGznaiXrdrmhGZjjUyggXkArPXXEKwehKzBaPmwqXpZxjeQgiWKTKDvGpShCSzXfUMnEWtHcwagbbGvFCjmtnFEtVSUxppucuAnLiGbgHvECrDzxjxUNMLDvxXkhcXmpbrYRMyvdqXzrbCNjpVUZnQeNkBXBmRMLfGFYNVPGBkdSMxmqQQnTRpjZtBWFVetJeyVeqeuXGFDtcmJgdkWQPgxnTwPhcKLQdgjYEyeXducpMGPqBuDYkTUcJdPLqHXUuKCPupmiZQrPbTmAQpnkWDwVHZURptuUbBKuZWearvSWuhxxERUZjtjKEGdfSYyDJcbceFiEQEBEXpjXemruWdYbxHrvSEpNTLpGkZfGkiRzVujURwfUhXDEnSVYAGFGMKnxUTHcHeiyDmYcwrknWqdKRzhvykAtzNDXQFtdBtRvhqjfxVRStqkbyaGPqMdbaqKbvTbCGcBTRRYZNPDJLgHijbvatJDWHezwuXfcRyxhHHqKYKKByMrGCAA';
 describe('new tags', () => {
     beforeEach(() => {
       
@@ -28,11 +31,11 @@ describe('new tags', () => {
 
         cy.xpath(
         '/html[1]/body[1]/div[2]/div[1]/main[1]/section[1]/div[1]/div[1]'
-        ).type(faker.datatype.string(1999))
+        ).type(newIntegrationless2000)
 
     })
 
-    it('Post title < 2000', () => { 
+    it('Post title = 2000', () => { 
         cy.get('#ember8').type(user)
         cy.get('#ember10').type(password)
         cy.get('#ember12').click()        
@@ -42,11 +45,11 @@ describe('new tags', () => {
 
         cy.xpath(
         '/html[1]/body[1]/div[2]/div[1]/main[1]/section[1]/div[1]/div[1]'
-        ).type(faker.datatype.string(2000))
+        ).type(newIntegrationEqual2000)
 
     })
 
-    it('Post title < 2000', () => { 
+    it('Post title > 2000', () => { 
         cy.get('#ember8').type(user)
         cy.get('#ember10').type(password)
         cy.get('#ember12').click()        
@@ -56,7 +59,7 @@ describe('new tags', () => {
 
         cy.xpath(
         '/html[1]/body[1]/div[2]/div[1]/main[1]/section[1]/div[1]/div[1]'
-        ).type(faker.datatype.string(2200))
+        ).type(newIntegrationMorel2000)
 
     })
 
