@@ -6,6 +6,8 @@
     * Realizar la instalación de Ghost en una imagen de Docker.
     * Tener instalado Git en su máquina. (No se explica en este Readme)
     * Tener instalaso Visual Studio Code. (No se explica en este Readme)
+    * Tener instalado Node JS. (No se explica en este Readme)
+    * Tener instalado Cypress. (No se explica en este Readme)
 
 1. Realizar la instalación de Docker:
 * 		En este link buscan su sistema operativo e instalan el Docker -> https://docs.docker.com/desktop/mac/install/
@@ -42,6 +44,8 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 11. Abra una nueva terminal
 
 12. Ejecute el comando: npm install
+   
+12.5. Revisar si efectivamente se instalo la herramienta Faker, si no se instalo automaticamente,  usar el siguiente comando npm install @faker-js/faker --save-dev
   
 13. En la consola digite el comando `cypress open`, el cual abrira la interfaz grafica de cypress y desde allí debe abrir la carpeta donde alojo su proyecto.
 
@@ -49,7 +53,10 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 
     * Nota: Dos casos se encuentran comentados dado que se encontraron dos bugs que afectan considerablemente el comportamiento de la aplicación, ya que se cambia el usuario para ingresar desde la aplicación y esto se haría en tiempo de ejecución de la automatización y generaria que los demás casos empiecen a fallar. Estos casos se encuentran en el archivo perfilUsuario.js y estan entre la lineas 29 a 36. Así que si desea ejecutarlos es necesario descomentar dichas lineas.
 
-## IMPORTANTE: LOS CASOS DE CAMBIAR CONTRASEÑA, EJECUTARLOS AL FINAL, DEBIDO A QUE SE PUEDE CAMBIAR LA CONTRASEÑA ACCIDENTALMENTE Y LUEGO SERA DIFICIL LOGEARSE. 
+## IMPORTANTE:
+### LOS CASOS DE CAMBIAR CONTRASEÑA, EJECUTARLOS AL FINAL, DEBIDO A QUE SE PUEDE CAMBIAR LA CONTRASEÑA ACCIDENTALMENTE Y LUEGO SERA DIFICIL LOGEARSE. 
+### SI EMPIEZA A PRESETAR ERRORES DE LOG IN, ES PORQUE PASO DE 100 VECES PERMITIDOS POR GHOST, ENTONCES DEBEMOS ELIMINAR LA IMAGEN DE DOCKER Y VOLVER A CREARLA Y SEGUIR CORRIENDO LOS CASOS 
+   
 
 ## Bugs reportados
     * Se encuentran enla sección de Issues del proyecto en Github
