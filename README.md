@@ -59,6 +59,8 @@ Luego de tener instaladas la imagen de docker se debe ejecutar el comando
 ### LOS CASOS DE CAMBIAR CONTRASEÑA, EJECUTARLOS AL FINAL, DEBIDO A QUE SE PUEDE CAMBIAR LA CONTRASEÑA ACCIDENTALMENTE Y LUEGO SERA DIFICIL LOGEARSE. 
 ### SI EMPIEZA A PRESETAR ERRORES DE LOG IN, ES PORQUE PASO DE 100 VECES PERMITIDOS POR GHOST, ENTONCES DEBEMOS ELIMINAR LA IMAGEN DE DOCKER Y VOLVER A CREARLA Y SEGUIR CORRIENDO LOS CASOS 
    
+      Este repositorio contiene unicamente una parte del trabajo final, para ver la otra parte del proyecto (las pruebas E2E) porfavor dirigirse a este link https://github.com/carlosvillamilc/E2E_ghost_test_cases
+   
 
 ## Bugs reportados
     * Se encuentran enla sección de Issues del proyecto en Github
